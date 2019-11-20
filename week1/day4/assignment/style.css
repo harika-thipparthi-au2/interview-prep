@@ -1,0 +1,41 @@
+
+  div {
+    background-image:linear-gradient(darkgrey, #6495ED);
+    width: 280px;
+    border: 8px solid steelblue;
+    padding: 30px;
+    margin: 30px 30px 30px 30px;
+    border-radius: 4px;
+    height:360px;
+  }
+  h1{
+     color:white;
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serife3
+  }
+  button{
+    color:white;
+    background-color:#ABB2B9  ;
+    border-radius:7px;
+    width:40px;
+    height:40px;
+    font-weight: 900;
+    font-size: 30px;
+   }
+   
+  button:hover{
+      background-color:darkgray;
+  }
+  #main{
+    text-align:center;
+  }
+  #result{
+    border-radius:5px;
+    font-weight:900;
+    height:60px;
+    font-size: 20px;
+    margin-left: 8px;
+    width:250px;
+
+  }
+  
