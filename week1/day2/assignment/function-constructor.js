@@ -1,19 +1,10 @@
-function Person(first, last, age, gender) {
-  this.firstName = first;
-  this.lastName = last;
-  this.age = age;
-  this.gender = gender;
+//The function statement is not the only way to define a new function; you can define your function dynamically using Function() constructor along with the new operator.
+
+
+var func = new Function("x", "y", "return x*y;");
+function secondFunction() {
+  var result;
+  result = func(10, 20);
+  console.log(result);
 }
-
-var myMother = new Person("Karuna", "Thipparthi", 44, "female");
-console.log(myMother);
-
-var myFather = new Person("Ashok Reddy", "Thipparthi", 50, "Male");
-
-myMother.motherTongue = "Telugu";
-
-myFather.fullname = function () {
-  return this.firstName + " " + this.lastName;
-};
-
-console.log("My father's name is "+myFather.fullname());
+secondFunction();
