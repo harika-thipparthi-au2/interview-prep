@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	 crossorigin="anonymous">
+
+	</script>
+</head>
+
+<body>
+
+	<h1>Checked Checkboxes example</h1>
+	<form>
+		<input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car" > I have a car<br>
+    <input type="checkbox" name="vehicle" value="Plane"> I have a plane<br>
+  <input type="checkbox" name="vehicle" value="Auto"> I have an auto<br>
+  <input type="checkbox" name="vehicle" value="Bus"> I have a bus<br>
+<br><br>
+  <button>Click me</button>
+</form>
+	
+     <script>
+      $(document).ready(function() {
+        $("button").click(function(){
+            var checkboxList = [];
+            $.each($("input[name='vehicle']:checked"), function(){
+                checkboxList.push($(this).val());
+            });
+            alert("Checked checkboxes list is: " + checkboxList.join(", "));
+        });
+    });
+     </script>
+  </body>
+</html>

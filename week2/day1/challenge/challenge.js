@@ -27,3 +27,8 @@ var searchRange = function(nums, target) {
 
   return [start, end];
 };
+
+let nums=[5,7,7,8,8,10];
+console.log(searchRange(nums,7));
+
+
