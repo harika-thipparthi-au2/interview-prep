@@ -1,0 +1,6 @@
+
+delete from cd.members where memid = 37;     
+
+//delete from tablename where condition
+
+//In output member 37 will be removed.    

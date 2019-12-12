@@ -1,0 +1,5 @@
+select (select count(*) from cd.members) as count, firstname, surname
+	from cd.members
+order by joindate
+
+//list of member names with each row containing the total member count is produced in table.
